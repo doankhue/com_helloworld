@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.0" method="upgrade">
-
 	<name>Hello World!</name>
 	<!-- The following elements are optional and free of formatting constraints -->
 	<creationDate>January 2018</creationDate>
@@ -54,6 +53,8 @@
 			<filename>helloworld.php</filename>
 			<!-- SQL files section -->
 			<folder>sql</folder>
+			<!-- tables files section -->
+			<folder>tables</folder>
 		</files>
 	</administration>
 
