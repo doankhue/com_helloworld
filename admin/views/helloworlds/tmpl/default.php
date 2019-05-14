@@ -61,4 +61,6 @@ defined('_JEXEC') or die('Restricted Access');
 			<?php endif; ?>
 		</tbody>
 	</table>
+	<input type="hidden" name="boxchecked" value="0">
+	<input type="hidden" name="task" value="">
 </form>
