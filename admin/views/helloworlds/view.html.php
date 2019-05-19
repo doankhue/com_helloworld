@@ -38,6 +38,9 @@ class HelloWorldViewHelloWorlds extends JViewLegacy
 			return false;
 		}
 
+		// Set the submenu
+		HelloWorldHelper::addSubmenu('helloworlds');
+		
 		// Set the toolbar
 		$this->addToolBar();
 

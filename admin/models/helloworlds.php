@@ -28,9 +28,12 @@ class HelloWorldModelHelloWorlds extends JModelList
 		$query = $db->getQuery(true);
 
 		// Create the base select statement.
-		$query->select('*')
-                ->from($db->quoteName('#__helloworld'));
+		$query->select('a.id as id, a.greeting as greeting, a.published as published')
+			  ->from($db->quoteName('#__helloworld', 'a'));
 
+		// // Join over the categories.
+		$query->select($db->quoteName('c.title', 'category_title'))
+			->join('LEFT', $db->quoteName('#__categories', 'c') . ' ON c.id = a.catid');
 		return $query;
 	}
 }
